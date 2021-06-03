@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?package classes>
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="classes.InputContactController">
+   <children>
+      <BorderPane layoutX="-2.0" prefHeight="72.0" prefWidth="607.0" style="-fx-background-color: gray;" />
+      <Label layoutX="14.0" layoutY="14.0" text="Клас Contact">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Label>
+      <Button fx:id="input_contact" layoutX="243.0" layoutY="337.0" mnemonicParsing="false" onAction="#handleButtonActionInputData" text="Ввести до колекції" />
+      <TextField fx:id="contact_address_field" layoutX="243.0" layoutY="256.0" />
+      <TextField fx:id="contact_name_field" layoutX="243.0" layoutY="167.0" />
+      <TextField fx:id="contact_surname_field" layoutX="243.0" layoutY="211.0" />
+      <Text layoutX="78.0" layoutY="187.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ім'я" textAlignment="RIGHT" wrappingWidth="130.13671875">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <Text layoutX="78.0" layoutY="231.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Прізвище" textAlignment="RIGHT" wrappingWidth="130.13671875">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <Text layoutX="78.0" layoutY="276.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Адреса" textAlignment="RIGHT" wrappingWidth="130.13671875">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <Button fx:id="сontactsToFile" layoutX="419.0" layoutY="302.0" mnemonicParsing="false" onAction="#handleButtonActionContactsToFile" prefHeight="60.0" prefWidth="60.0">
+         <graphic>
+            <ImageView fitHeight="54.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/toFile.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="StudentsSortID" layoutX="405.0" layoutY="162.0" mnemonicParsing="false" onAction="#handleButtonActionBubbleSort" prefHeight="37.0" prefWidth="149.0" style="-fx-background-image: url('assets/sort.png');" text="Бульбашкове">
+         <graphic>
+            <ImageView fitHeight="29.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/sort.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="StudentsSortSurname" layoutX="405.0" layoutY="207.0" mnemonicParsing="false" onAction="#handleButtonActionInsertSort" prefHeight="37.0" prefWidth="149.0" style="-fx-background-image: url('assets/sort.png');" text="Вставками">
+         <graphic>
+            <ImageView fitHeight="29.0" fitWidth="94.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/sort.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="StudentsSortSurname1" layoutX="405.0" layoutY="249.0" mnemonicParsing="false" onAction="#handleButtonActionChoiceSort" prefHeight="37.0" prefWidth="149.0" style="-fx-background-image: url('assets/sort.png');" text="Вибором">
+         <graphic>
+            <ImageView fitHeight="29.0" fitWidth="94.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/sort.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>

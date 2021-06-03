@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="535.0" prefWidth="777.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="classes.Controller">
+   <children>
+      <AnchorPane layoutY="-6.0" prefHeight="126.0" prefWidth="777.0" style="-fx-background-color: #808080;">
+         <children>
+
+            <Label layoutX="90.0" layoutY="29.0" prefHeight="68.0" prefWidth="268.0" text="Меню" textFill="#f4f4f4">
+               <font>
+                  <Font name="Roboto Slab Bold" size="40.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="68.0" fitWidth="68.0" layoutX="14.0" layoutY="29.0">
+               <image>
+                  <Image url="@../assets/ppc_logo.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Button fx:id="dataFromBaseStudents" alignment="CENTER" layoutX="60.0" layoutY="187.0" mnemonicParsing="false" onAction="#handleButtonActionDataFromBaseStudents" prefHeight="42.0" prefWidth="166.0" text="Вивести дані з таблиці Студенти" textAlignment="CENTER" wrapText="true" />
+      <TextArea fx:id="textAreaStudents" layoutX="42.0" layoutY="237.0" prefHeight="263.0" prefWidth="202.0" />
+      <TextArea fx:id="textAreaRooms" layoutX="288.0" layoutY="237.0" prefHeight="263.0" prefWidth="202.0" />
+      <TextArea fx:id="textAreaPriveleges" layoutX="528.0" layoutY="237.0" prefHeight="263.0" prefWidth="202.0" />
+      <Button fx:id="dataFromBaseRooms" alignment="CENTER" layoutX="306.0" layoutY="187.0" mnemonicParsing="false" onAction="#handleButtonActionDataFromBaseRooms" prefHeight="42.0" prefWidth="166.0" text="Вивести дані з таблиці Кімнати" textAlignment="CENTER" wrapText="true" />
+      <Button fx:id="dataFromBasePriveleges" alignment="CENTER" layoutX="546.0" layoutY="187.0" mnemonicParsing="false" onAction="#handleButtonActionDataFromBasePriveleges" prefHeight="42.0" prefWidth="166.0" text="Вивести дані з таблиці Привілегії" textAlignment="CENTER" wrapText="true" />
+      <Button fx:id="dataToBaseStudents" alignment="CENTER" layoutX="60.0" layoutY="136.0" mnemonicParsing="false" onAction="#handleButtonActionDataToBaseStudents" prefHeight="42.0" prefWidth="166.0" text="Ввести дані в таблицю Студенти" textAlignment="CENTER" wrapText="true" />
+      <Button fx:id="dataToBasePriveleges" alignment="CENTER" layoutX="546.0" layoutY="136.0" mnemonicParsing="false" onAction="#handleButtonActionDataFromBasePriveleges" prefHeight="42.0" prefWidth="166.0" text="Ввести дані в таблицю Привелегії" textAlignment="CENTER" wrapText="true" />
+      <Button fx:id="dataToBaseRooms" alignment="CENTER" layoutX="306.0" layoutY="136.0" mnemonicParsing="false" onAction="#handleButtonActionDataToBaseRooms" prefHeight="42.0" prefWidth="166.0" text="Ввести дані в таблицю Кімнати" textAlignment="CENTER" wrapText="true" />
+   </children>
+</AnchorPane>
